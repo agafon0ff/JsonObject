@@ -12,9 +12,9 @@ cout << jsonObject.stringify(JsonObject::MODE_COMPACT) << endl;
 // {"bool":true,"number":123.4567000000,"text":"Hello world!"}
 ```
 
-### Deserialization text to json-object
+### Deserialization text to json-object:
 ```Java
-string data = "{\"bool\": false, \"num\":123.4567, \"name\":\"Jane\"}";
+string data = "{\"bool\": false, \"num\":123.457, \"name\":\"Jane\"}";
 JsonObject jsonObject;
 jsonObject.parse(data.c_str(), data.size());
 string name = jsonObject.value("name").toString();
