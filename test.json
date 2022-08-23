@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "463567902345",
+    "isActive": true,
+    "balance": "$2,544.35",
+    "age": 24,
+    "name": "Ivan Markus",
+    "gender": "male",
+    "company": "ABC-Company",
+    "email": "ivan.markus@pmail.com",
+    "phone": "+2(922)522-2232",
+    "friends": [
+      {
+        "_id": 0,
+        "name": "Petr Arun"
+      },
+      {
+        "_id": 1,
+        "name": "Daria Conn"
+      }
+    ],
+    "favoriteColor": "Green"
+  },
+  {
+    "_id": "235230980456",
+    "isActive": false,
+    "balance": "$3,2424.12",
+    "age": 22,
+    "name": "Daria Conn",
+    "gender": "female",
+    "company": "DEF-Technology",
+    "email": "dconn@ups.com",
+    "phone": "+49(1514)315-1314",
+    "friends": [
+      {
+        "_id": 0,
+        "name": "Ivan Markus"
+      },
+      {
+        "_id": 1,
+        "name": "Vasiliy Gun"
+      }
+    ],
+    "favoriteColor": "Yellow"
+  }
+]
