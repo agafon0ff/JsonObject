@@ -21,10 +21,8 @@
 */
 
 #include <cstring>
-#include <iostream>
 #include <sstream>
 #include <iomanip>
-#include <stack>
 
 #include "jsonobject.h"
 
