@@ -260,6 +260,14 @@ std::vector<JsonObject> JsonObject::toArray()
     return {};
 }
 
+std::map<std::string, JsonObject> JsonObject::toMap()
+{
+     if (m_type == JsonObject::JSON_OBJECT)
+        return m_map;
+
+    return {};
+}
+
 std::string JsonObject::_stringify(size_t indent, StringifyMode mode)
 {
     std::string result;
@@ -285,7 +293,6 @@ std::string JsonObject::_stringify(size_t indent, StringifyMode mode)
     case JsonObject::JSON_ARRAY:
         result += "[";
         result += newLine;
-
         ++indent;
 
         for (auto it = m_array.begin(); it != m_array.end(); ++it)
@@ -299,8 +306,8 @@ std::string JsonObject::_stringify(size_t indent, StringifyMode mode)
             }
         }
 
-        result += newLine;
         --indent;
+        result += newLine;
         result += std::string(indent * spaces, ' ');
         result += "]";
 
@@ -328,8 +335,8 @@ std::string JsonObject::_stringify(size_t indent, StringifyMode mode)
             }
         }
 
-        result += newLine;
         --indent;
+        result += newLine;
         result += std::string(indent * spaces, ' ');
         result += "}";
         break;

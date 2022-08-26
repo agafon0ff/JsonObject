@@ -26,7 +26,6 @@
 #include <vector>
 #include <map>
 
-
 /// \brief The JsonObject class implements serialization and
 /// deserialization of JSON-formatted text.
 class JsonObject
@@ -129,6 +128,9 @@ public:
 
     /// \brief toNumber - returns contained value if type is JSON_ARRAY
     std::vector<JsonObject> toArray();
+
+    /// \brief toMap - returns map container with all included objects
+    std::map<std::string, JsonObject> toMap();
 
 private:
     std::string m_value;
