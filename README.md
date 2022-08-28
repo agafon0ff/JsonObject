@@ -16,7 +16,7 @@ cout << jsonObject.stringify(JsonObject::MODE_COMPACT) << endl;
 ```Java
 string data = "{\"bool\": false, \"num\":123.457, \"name\":\"Jane\"}";
 JsonObject jsonObject;
-jsonObject.parse(data.c_str(), data.size());
+jsonObject.parse(data);
 string name = jsonObject.value("name").toString();
 double num = jsonObject.value("num").toNumber();
 cout << "name: " << name << ", num: " << num << endl;
